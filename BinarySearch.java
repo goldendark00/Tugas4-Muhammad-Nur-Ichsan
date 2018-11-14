@@ -1,10 +1,10 @@
 class BinarySearch 
 { 
-    int binarySearch(int arr[], int l, int r, int x) 
+    double binarySearch(double arr[], double l, double r, double x) 
     { 
         if (r>=l) 
         { 
-            int mid = l + (r - l)/2; 
+            double mid = l + (r - l)/2; 
   
             if (arr[mid] == x) 
                return mid; 
@@ -21,10 +21,10 @@ class BinarySearch
     public static void main(String args[]) 
     { 
         BinarySearch ob = new BinarySearch(); 
-        int arr[] = {2,3,4,10,40}; 
-        int n = arr.length; 
-        int x = 10; 
-        int result = ob.binarySearch(arr,0,n-1,x); 
+        double arr[] = {22.12,32.2,42.2,10.21,40.2}; 
+        double n = arr.length; 
+        double x = 10; 
+        double result = ob.binarySearch(arr,0,n-1,x); 
         if (result == -1) 
             System.out.println("Element not present"); 
         else
